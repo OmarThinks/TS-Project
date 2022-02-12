@@ -1,4 +1,12 @@
 "use strict";
-function len(x) {
-    return x.length;
-}
+const f1 = () => {
+    return true;
+};
+const f2 = () => true;
+const f3 = function () {
+    return true;
+};
+const v1 = f1();
+const v2 = f2();
+const v3 = f3();
+console.log(typeof v1, v2, v3);
