@@ -1,9 +1,4 @@
 "use strict";
-function doSomething(fn) {
-    console.log(fn.description + " returned " + fn(6));
+function map(arr, func) {
+    return arr.map(func);
 }
-const myFn = (someArg) => {
-    return someArg > 5;
-};
-myFn.description = 'checks if arg is greater than 5';
-doSomething(myFn);

@@ -1,18 +1,13 @@
-type DescribableFunction = {
-    description: string;
-    (someArg: number): boolean;
-  };
-  function doSomething(fn: DescribableFunction) {
-    console.log(fn.description + " returned " + fn(6));
-  }
 
 
-  const myFn:DescribableFunction = (someArg) => {
-    return someArg > 5;
-  };
-  myFn.description = 'checks if arg is greater than 5';
+function map<Input, Output>(
+    arr:Input[], func:(arr:Input)=>Output):Output[]{
+        return arr.map(func)
+    }
 
 
-  doSomething(myFn);
+
+
+
 
 
