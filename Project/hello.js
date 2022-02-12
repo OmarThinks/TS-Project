@@ -1,12 +1,9 @@
 "use strict";
-const product1 = {
-    id: 1, name: "Hi"
+function doSomething(fn) {
+    console.log(fn.description + " returned " + fn(6));
+}
+const myFn = (someArg) => {
+    return someArg > 5;
 };
-const product2 = {
-    id: 1, name: "Hi", description: "Good Product"
-};
-const myFunction = (p) => {
-    console.log(p);
-};
-myFunction(product1);
-myFunction(product2);
+myFn.description = 'checks if arg is greater than 5';
+doSomething(myFn);

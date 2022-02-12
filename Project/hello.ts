@@ -1,23 +1,18 @@
-interface Product {
-    id:number,
-    name:string,
-}
-
-const product1 : Product = 
-{
-    id:1, name:"Hi"
-};
+type DescribableFunction = {
+    description: string;
+    (someArg: number): boolean;
+  };
+  function doSomething(fn: DescribableFunction) {
+    console.log(fn.description + " returned " + fn(6));
+  }
 
 
-const product2 = 
-{
-    id:1, name:"Hi", description:"Good Product"
-};
+  const myFn:DescribableFunction = (someArg) => {
+    return someArg > 5;
+  };
+  myFn.description = 'checks if arg is greater than 5';
 
 
-const myFunction=(p:Product):void=>{
-    console.log(p);
-}
+  doSomething(myFn);
 
-myFunction(product1);
-myFunction(product2);
+
