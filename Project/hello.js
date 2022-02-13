@@ -1,7 +1,5 @@
 "use strict";
-const p1 = {
-    name: "kjdhjksadf",
-    description: "afkfhdkj",
-    price: 123,
-    amount: 400
-};
+function helloWorldGenerics(input) {
+    return input;
+}
+helloWorldGenerics(1);
