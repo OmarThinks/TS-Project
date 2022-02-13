@@ -1,5 +1,7 @@
 "use strict";
-let myShape = { style: "My Style" };
-console.log(myShape);
-myShape = Object.assign(Object.assign({}, myShape), { style: "Hi" });
-console.log(myShape);
+const p1 = {
+    name: "kjdhjksadf",
+    description: "afkfhdkj",
+    price: 123,
+    amount: 400
+};
