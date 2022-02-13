@@ -9,7 +9,23 @@ function helloWorldGenerics<Type>(input:Type):Type{
 
 
 
-helloWorldGenerics(1);
+helloWorldGenerics<string|number>(1);
+
+
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
+
+let myIdentity :(<Type>(arg:Type)=>Type) 
+= <Type>(arg:Type)=>{return arg;};
+
+
+
+
+
+
+
+
 
 
 
