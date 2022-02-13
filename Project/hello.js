@@ -1,12 +1,5 @@
 "use strict";
-const f1 = () => {
-    return true;
-};
-const f2 = () => true;
-const f3 = function () {
-    return true;
-};
-const v1 = f1();
-const v2 = f2();
-const v3 = f3();
-console.log(typeof v1, v2, v3);
+let myShape = { style: "My Style" };
+console.log(myShape);
+myShape = Object.assign(Object.assign({}, myShape), { style: "Hi" });
+console.log(myShape);
