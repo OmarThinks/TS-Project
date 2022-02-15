@@ -1,9 +1,10 @@
 "use strict";
-function helloWorldGenerics(input) {
-    return input;
+class Box {
+    constructor() {
+        this.contents = "";
+    }
+    set(value) {
+        this.contents = value;
+        return this;
+    }
 }
-helloWorldGenerics(1);
-function identity(arg) {
-    return arg;
-}
-let myIdentity = (arg) => { return arg; };

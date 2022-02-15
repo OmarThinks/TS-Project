@@ -2,31 +2,11 @@
 
 
 
-function helloWorldGenerics<Type>(input:Type):Type{
-  return input;
+class Box {
+  contents: string = "";
+  set(value: string) {
+  
+    this.contents = value;
+    return this;
+  }
 }
-
-
-
-
-helloWorldGenerics<string|number>(1);
-
-
-function identity<Type>(arg: Type): Type {
-  return arg;
-}
-
-let myIdentity :(<Type>(arg:Type)=>Type) 
-= <Type>(arg:Type)=>{return arg;};
-
-
-
-
-
-
-
-
-
-
-
-
