@@ -1,10 +1,10 @@
-"use strict";
-class Box {
-    constructor() {
+var Box = /** @class */ (function () {
+    function Box() {
         this.contents = "";
     }
-    set(value) {
+    Box.prototype.set = function (value) {
         this.contents = value;
         return this;
-    }
-}
+    };
+    return Box;
+}());
