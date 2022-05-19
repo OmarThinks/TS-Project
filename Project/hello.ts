@@ -1,12 +1,9 @@
 
 
+var my_test = "Hello World";
+
+my_test.sata="Hi";
 
 
-class Box {
-  contents: string = "";
-  set(value: string) {
-  
-    this.contents = value;
-    return this;
-  }
-}
+
+
